@@ -1,0 +1,15 @@
+#countDown {
+  padding: 1rem 2rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.days {
+  font-size: 8rem;
+  color: white;
+}
+.clock {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 0.6rem;
+}
