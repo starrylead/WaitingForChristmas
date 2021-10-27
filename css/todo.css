@@ -1,0 +1,49 @@
+#todo-form {
+  margin-bottom: 1rem;
+}
+#todo-form input {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 1.3rem;
+  border-bottom: 1px solid white;
+  padding-top: 20px;
+  transition: border-color 0.5s ease-in-out;
+}
+#todo-form input:focus {
+  font-family: "Do Hyeon", sans-serif;
+  outline: none;
+  border-color: orange;
+}
+#todo-form input:focus::placeholder {
+  opacity: 0;
+}
+#todo-form input::placeholder {
+  font-size: 1.2rem;
+  color: white;
+}
+
+#todo-list {
+  font-family: "Do Hyeon", sans-serif;
+  list-style: none;
+  width: 250px;
+  font-size: 1.8rem;
+}
+
+li {
+  font-family: "Do Hyeon", sans-serif;
+  color: white;
+  width: 100%;
+  position: relative;
+  padding: 5px 0px;
+  border-bottom: 1px solid transparent;
+  will-change: border-color;
+  transition: border-color 0.5s ease-in-out;
+}
+
+li button {
+  color: orange;
+  font-size: 0.3rem;
+  border: none;
+  background-color: transparent;
+}
