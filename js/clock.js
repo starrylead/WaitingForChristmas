@@ -1,7 +1,7 @@
 const clock = document.querySelector(".clock");
 const day = document.querySelector(".days");
 function getClock() {
-  const dday = new Date("2024-12-25,00:00:00").getTime();
+  const dday = new Date("2025-12-25,00:00:00").getTime();
   const today = new Date().getTime();
   const timeLeftSec = (dday - today)/1000;
 
