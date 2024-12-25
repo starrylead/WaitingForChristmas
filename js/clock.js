@@ -7,8 +7,8 @@ function getClock() {
 
   let seconds = Math.floor(timeLeftSec)%60;
   let minutes = Math.floor(timeLeftSec/60)%60;
-  let hours = Math.floor(timeLeftSec/(60*60))%24;
-  let days = Math.floor(timeLeftSec/(60*60*24));
+  let hours = Math.round(timeLeftSec/(60*60))%24;
+  let days = Math.round(timeLeftSec/(60*60*24));
 
   //  if (seconds === 0) { minutes = (minutes + 1) % 60; }
 
@@ -16,11 +16,11 @@ function getClock() {
   const formattedMinutes = String(minutes).padStart(2, "0");
   const formattedHours = String(hours).padStart(2, "0");
 
-  if(Math.floor(days) < 0) {
-    day.innerText = `D+${Math.abs(Math.floor(days))}`;
+  if(Math.round(days) < 0) {
+    day.innerText = `D+${Math.abs(days)}`;
   }
   else {
-    day.innerText = `D-${Math.floor(days)}`;
+    day.innerText = `D-${days}`;
   }
   clock.innerText = `${Math.abs(formattedHours)}:${Math.abs(formattedMinutes)}:${Math.abs(formattedSeconds)}`;
 }
